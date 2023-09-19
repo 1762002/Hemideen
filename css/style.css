@@ -1,0 +1,207 @@
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+:root {
+    --white-color : #fff ;
+    --main-color : rgb(142, 119, 84) ;
+    --black-color : #000 ;
+    --main-bg : rgb(248, 248, 248) ;
+    --gray-color : rgb(122, 122, 122) ;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: rgba(34, 33, 31, 0.8);
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.navbar .navbar-toggler {
+    color: var(--white-color);
+    font-size: 25px;
+    border-color: var(--white-color);
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar .navbar-toggler[aria-expanded="true"] {
+    border-color: var(--main-color) !important;
+}
+
+.nav-link {
+    color: var(--white-color) !important;
+    margin-left: 1rem ;
+    font-weight: 200;
+}
+
+.nav-link:hover {
+    color: var(--main-color) !important;
+}
+
+.home {
+    color: var(--white-color);
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/drew-coffman-1872.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    margin: 1.5rem 0;
+}
+
+p {
+    line-height: 2rem;
+    font-weight: 200;
+}
+
+.home-btns a {
+    color: var(--white-color);
+    background-color: var(--main-color);
+    padding: 15px 20px;
+    margin-left: 5px; 
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.home-btns .learn {
+    border: 2px solid var(--main-color);
+}
+
+.home-btns .cont {
+    background-color: transparent;
+    border: 2px solid var(--white-color);
+}
+
+.home-btns a:hover {
+    border: 2px solid var(--white-color);
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+
+h2 {
+    display: inline-block;
+    font-size: 1.5rem;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: var(--gray-color);
+    bottom: 0;
+    left: 0;
+}
+
+.who-content p , .location-content p , .baking p , .contact p , footer p{
+    color: var(--gray-color);
+}
+
+.who-content ul li , .contact-info ul li{
+    margin-bottom: 25px;
+    color: var(--gray-color);
+    line-height: 2rem;
+    font-weight: 200;
+}
+
+.who-content ul li i , .contact-info ul li i{
+    color: var(--main-color) ;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 1px solid var(--main-color);
+    transition: all 0.3s;
+}
+
+.who-content ul li i:hover , .contact-info ul li i:hover {
+    border: 1px solid var(--white-color);
+    background-color: var(--main-color);
+    color: var(--white-color);
+}
+
+.location {
+    background-color: var(--main-bg);
+}
+
+.baking-card h3 {
+    font-size: 17px;
+    font-weight: 700
+}
+
+.baking-card-img , .who-img , .location-img{
+    overflow:hidden;
+    border-radius: 5px;
+}
+
+img {
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+
+.contact {
+    background-color: var(--main-bg);
+}
+
+.info {
+    background-color: rgb(64, 61, 56);
+    color: var(--gray-color);
+}
+
+h4 {
+    color: var(--white-color);
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.info ul li {
+    margin-bottom: 25px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid var(--gray-color);
+}
+
+.info ul li a {
+    color: var(--gray-color);
+    transition: all 0.3s;
+}
+
+.info ul li a:hover {
+    color: var(--white-color);
+}
+
+footer {
+    background-color: rgb(53, 51, 48);
+}
+
+footer .social-icons a {
+    display: inline-block;
+    color: var(--gray-color);
+    font-size: 25px;
+    margin-left: 10px;
+    padding: 5px;
+    transition: all 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: var(--main-color);
+    transform: rotatex(360deg) scale(2);
+}
