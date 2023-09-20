@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- font awesome link -->
     <link rel="stylesheet" href="css/all.min.css">
     <!-- bootstrap css link -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -12,79 +10,36 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- page icon -->
     <link rel="icon" href="WhatsApp Image 2023-09-19 at 20.42.46.jpg">
-
-    <title> Elhamden | home page </title>
+    <title> Elhamden | about us page </title>
     <style>
-        .home {
-    color: white;
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url(kitchen-interior.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
+        .about-font {
+    color: var(--black);
+    display: inline;
+    font-size: 2rem;
     position: relative;
+    padding-bottom: 10px;
 }
 
-h1 {
-    font-size: 4rem;
-    font-weight: 600;
-    margin: 1.5rem 0;
-}
-
-p {
-    line-height: 2rem;
-    font-weight: 200;
-}
-
-.home-btns a {
-    color: white;
-    background-color: red;
-    padding: 15px 20px;
-    margin-left: 5px; 
-    font-size: 13px;
-    font-weight: 600;
-    border-radius: 5px;
-    transition: all 0.3s;
-}
-
-.home-btns .learn {
-    border: 2px solid red;
-}
-
-.home-btns .cont {
-    background-color: transparent;
-    border: 2px solid white;
-}
-
-.home-btns a:hover {
-    border: 2px solid white;
-    background-color: white;
-    color: red;
-}
-
-h2 {
-    display: inline-block;
-    font-size: 1.5rem;
-    position: relative;
-    padding-bottom: 5px;
-}
-
-h2::after {
+.about-font::after {
     content: "";
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    background-color: gray;
+    width: 70%;
+    height: 3px;
     bottom: 0;
     left: 0;
+    position: absolute;
+    background-color: var(--blue-color);
 }
 
-.nav-link {
-    color: aliceblue !important;
+.about-span {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--black);
 }
     </style>
 </head>
 <body style="direction: rtl;">
-    <nav class="navbar navbar-expand-lg bg-dark bg-opacity-50 ">
+    
+    <nav class="navbar navbar-expand-lg bg-dark bg-opacity-75 ">
         <div class="container">
           <a class="navbar-brand" href="#"> <img class="rounded-5" width="180" height="70" src="WhatsApp Image 2023-09-19 at 20.42.46.jpg" alt="logo"> </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -93,7 +48,7 @@ h2::after {
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav m-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"> الرئسية </a>
+                <a class="nav-link active" aria-current="page" href="index.html"> الرئسية </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html"> عنا </a>
@@ -119,21 +74,44 @@ h2::after {
         </div>
       </nav>
 
-      <section class="home vh-100" id="home">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="home-contant position-absolute top-50 start-50 translate-middle text-center w-100">
-                        <p> مرحبا بك في </p>
-                        <h1> درة الحامدين </h1>
-                        <p class="">  نهتم بالتفاصيل  , تصميمات ستقع في حبها , من أجل الاستخدام الفعال للمساحة، استعن بأحد المحترفين المبدعين لتصاميم مميزة.</p>
-                        <div class="home-btns mt-5">
-                            <a href="about.html" class="learn"> لمعرفة المزيد عنا </a>
-                            <a href="#" class="cont">تواصل معانا </a>
+      <section class="py-5 mt-5" id="about">
+        <div class="container bg-white">
+        <div class="row position-relative py-5 shadow mt-5">
+            <div class="col-lg-6 col-sm-12 text-center">
+                <div>
+                    <div class="">
+                        <div class="row ">
+                            <div class="col-lg-5 col-sm-6 ">
+                                <div class="image">
+                                    <img class="rounded-2 w-50" src="WhatsApp Image 2023-09-19 at 20.42.46.jpg" alt="profile-photo">
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-sm-6">
+                                <div class="name text-end">
+                                    <ul class="list-unstyled">
+                                        <li class="mb-3"> شركة درة الحامدين </li>
+                                        <li class="mb-3"><span class="about-span"> تخصصنا : </span> تصميم وتنفيذ المطابخ بجودة عالية </li>
+                                        <li class="mb-3"><span class="about-span"> البريد الالكتروني :  </span> Elhamden@gmail.com</li>
+                                        <li class="mb-3"><span class="about-span"> رقم الهاتف :</span> +201141770634</li>
+                                    </ul>
+                                </div>
+                            </div>
+                         
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="col-lg-6 col-sm-12">
+                <div>
+                    <h5 class="mt-sm-5 about-font"> معلومات عنا :  </h5>
+                    <p class="about-p mt-5"> مطابخ درة الحامدين يقع مقرها في العنوان مصنع . الزاهر, Qasr Ad Diyafa, جانب مجمع الزاهر الطبي وجوتن, Mecca 24224, Saudi Arabia، مكة، منطقة مكة المكرمة. </p>
+                    <p class="about-p"> فريق هندسي للاشراف على عملية القياس والتصميم والتنفيذ الدقيق حيث مراعات المساحات لضمان الحركة المناسب لتستمتعي بقضاء أسعد اوقاتك في مطبخك </p>
+                    <p class="about-p"> خبرة مصنع الحامدين أكثر من 30 سنة
+                        مؤسسة عريقة منذ عام 1413 نقدم خدماتنا وتصميمنا لعملائنا بأسعار منافسة غايتنا ارضاء العميل وكسب ثقته والتطوير من عملنا في المواقع التنفيذية والدراسات وآراء العملاء </p>
+                </div>
+            </div>
+        </div>
         </div>
       </section>
 
@@ -207,6 +185,6 @@ h2::after {
         <!-- Copyright -->
       </footer>
 
-      <script src="js/bootstrap.bundle.min.js"></script>
-    </body>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
